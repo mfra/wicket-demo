@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:wicket="http://wicket.apache.org">
+<head>
+    <title>Wicket Demo</title>
+</head>
+<body>
+
+<h1>this text is not rendered</h1>
+
+<wicket:extend>
+    <div wicket:id="subcontent"/>
+    <div>
+        <wicket:link>
+            <a href="SubSubPage.html">here is a further sub page</a>
+        </wicket:link>
+    </div>
+    <wicket:child/>
+</wicket:extend>
+
+</body>
+</html>

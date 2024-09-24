@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns:wicket="http://wicket.apache.org">
+<head>
+    <title>Wicket Demo</title>
+    <script src="https://cdn.tailwindcss.com?plugins=typography,forms"></script>
+
+</head>
+<body class="w-full max-w-xs">
+
+<form wicket:id="form" class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+
+    <div wicket:id="feedback"></div>
+
+    <fieldset class="mb-4">
+        <label wicket:for="name" class="block text-gray-700 text-sm font-bold mb-2">Name</label>
+        <input wicket:id="name" type="text" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"/><br/>
+    </fieldset>
+    <fieldset class="mb-4">
+        <label wicket:for="age" class="block text-gray-700 text-sm font-bold mb-2">Age</label>
+        <input wicket:id="age" type="number" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"/><br/>
+    </fieldset>
+    <fieldset class="mb-4">
+        <label wicket:for="birthday" class="block text-gray-700 text-sm font-bold mb-2">Birthday</label>
+        <input wicket:id="birthday" type="date" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"/><br/>
+    </fieldset>
+
+    <fieldset class="mb-4">
+        <button wicket:id="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 border border-blue-700 rounded">submit</button>
+    </fieldset>
+
+</form>
+
+<hr/>
+<wicket:link>
+    <a href="../HomePage.html">homepage</a>
+</wicket:link>
+
+
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:wicket="http://wicket.apache.org">
+<head>
+    <title>Wicket Demo</title>
+    <script src="https://cdn.tailwindcss.com?plugins=typography,forms"></script>
+
+</head>
+<body>
+
+<div class="m-8 p-8 bg-indigo-100">
+    <a wicket:id="link"
+       class="py-2 px-5 bg-violet-500 text-white font-semibold rounded-full shadow-md hover:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-400 focus:ring-opacity-75">click
+        me</a>
+    <div wicket:id="place" class="mt-8 animate-pulse">
+        <em wicket:id="message"></em>
+    </div>
+</div>
+
+</body>
+</html>

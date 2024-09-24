@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html xmlns:wicket="http://wicket.apache.org">
+<head>
+    <title>Wicket Demo</title>
+    <script src="https://cdn.tailwindcss.com?plugins=typography,forms"></script>
+
+</head>
+<body>
+
+<div class="m-8 grid grid-cols-3 gap-4">
+    <div>
+        <h1 class="text-6xl">ING Demo</h1>
+    </div>
+    <div>
+        <img wicket:id="logo" class="skew-y-3"/>
+    </div>
+
+    <div class="col-span-2 shadow-xl">
+        <div class="prose prose-a:text-blue-600 prose-a:decoration-solid">
+
+            <wicket:link>
+                <ul class="list-none">
+                    <li><a href="ahelloworld/HelloWorldPage.html">Hello world</a></li>
+                    <li><a href="https://nightlies.apache.org/wicket/guide/10.x/single.html#_test_driven_development_with_wicket">Tests (>)</a></li>
+                    <li><a href="composition/CompositionPage.html">Composition</a></li>
+                    <li><a href="inheritance/SubPage.html">Inheritance</a></li>
+                    <li><a href="inject/InjectPage.html">Injection</a></li>
+                    <li><a href="models/ModelsPage.html">Models</a></li>
+                    <li><a href="forms/FormsPage.html">Forms and Validation</a></li>
+                    <li><a href="tables/TablePage.html">Table & List</a></li>
+                    <li><a href="wizards/WizardPage.html">Wizard</a></li>
+                    <li><a href="events/EventPage.html">Events</a></li>
+                    <li><a href="behaviours/BehaviourPage.html">Behaviours</a></li>
+                    <li><a href="ajax/AjaxPage.html">Ajax</a></li>
+                </ul>
+                <ul class="list-none">
+                    <li><a href="https://nightlies.apache.org/wicket/guide/10.x/single.html">User Guide (>)</a></li>
+                </ul>
+            </wicket:link>
+        </div>
+    </div>
+
+
+</div>
+
+</body>
+</html>
